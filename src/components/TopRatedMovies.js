@@ -23,11 +23,13 @@ const TopRatedMovies = () => {
         <>
             <h1>Top Rated</h1>
             <div className='wrapper'>
-            <div className="img-wrapper">
+            
                 {movies.map((movie)=>{
-                    return <img src={`${base_url}${movie.poster_path}`} alt="img" key={movie.id}/>
+                    return <div className="img-wrapper" key={movie.id}>
+                    <img src={`${base_url}${movie.poster_path}`} alt="img" />
+                    </div>
                 })}
-            </div>
+            
         </div>
         </>
        

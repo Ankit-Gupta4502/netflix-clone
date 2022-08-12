@@ -29,6 +29,7 @@ p{
 .wrapper{
     display: flex;
     margin-top: 10px;;
+    gap: 10px;
     overflow-y: hidden;
     overflow-x: scroll;
 }
@@ -41,11 +42,10 @@ p{
   }
 
 .wrapper .img-wrapper{
-    display: flex;
-    gap: 10px;
-    padding:10px;
     height: 300px;
-    width: 500px;
+    min-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .img-wrapper img{
@@ -53,8 +53,8 @@ p{
     height: 100%;
     transition: 450ms;
     cursor: pointer;
-    border-radius: 15px;
+    object-fit: cover;
 }
-.img-wrapper img:hover{
+.img-wrapper:hover img{
     transform: scale(1.08);
 }
